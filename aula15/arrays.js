@@ -9,4 +9,4 @@ alunos.push('José');
 alunos.push('Pedro');
 alunos.push('Caio');
 console.log(alunos);
-console.log(alunos.slice(0,-2));
+console.log(alunos.slice(0, -2));
