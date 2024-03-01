@@ -1,28 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Investimentos com Aportes Mensais</title>
+<link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
-    <form id="form">
-        <label for="inici">Valor inicial</label>
-        <input type="text" id="inici">
-        <label for="aport">Aporte</label>
-        <input type="text" id="aport">
-        <label for="temp">Tempo</label>
-        <input type="text" id="temp">
-        <label for="juro">Juros</label>
-        <input type="text" id="juro">
-        <input type="submit" onclick="Enviar();" value="Enviar">
-        <label for="resultado">Resultado</label>
-        <input type="text" name="" id="resultado">
+    
+    <div class="container">
+    <h2>Calculadora de Investimentos com Aportes Mensais</h2>
+    <form id="investmentForm">
+        <label for="initialAmount">Valor Inicial do Investimento:</label>
+        <input type="number" id="initialAmount" min="0" step="0.01" required><br><br>
+        
+        <label for="monthlyContribution">Aporte Mensal:</label>
+        <input type="number" id="monthlyContribution" min="0" step="0.01" required><br><br>
+        
+        <label for="annualInterestRate">Taxa de Juros Anual (%):</label>
+        <input type="number" id="annualInterestRate" min="0" step="0.01" required><br><br>
+        
+        <label for="years">Período de Tempo (anos):</label>
+        <input type="number" id="years" min="0" required><br><br>
+        <button type="button" onclick="calculateInvestment()">Calcular</button>
+        <div id="result"></div> 
     </form>
+    </div>
+
+    
+
+    <script>
+        function calculateInvestment() {
+            var initialAmount = parseFloat(document.getElementById("initialAmount").value);
+            var monthlyContribution = parseFloat(document.getElementById("monthlyContribution").value);
+            var annualInterestRate = parseFloat(document.getElementById("annualInterestRate").value);
+            var years = parseInt(document.getElementById("years").value);
+            var months = years * 12;
+
+            var futureValue = initialAmount;
+            for (var i = 0; i < months; i++) {
+                futureValue *= (1 + (annualInterestRate / 100 / 12)); // juros mensais
+                futureValue += monthlyContribution;
+            }
+            futureValue = futureValue.toFixed(2);
+
+            document.getElementById("result").innerHTML = "Valor do investimento após " + years + " anos: R$ " + futureValue;
+        }
+    </script>
 </body>
-
-<script src="index2.js"></script>
-
 </html>

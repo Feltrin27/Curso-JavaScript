@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(13, 165, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 50%; /* Define a largura do contêiner */
+    margin: 0 auto; /* Alinha o contêiner ao centro horizontalmente */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor do contêiner */
+    padding: 20px; /* Adiciona espaço interno entre a borda e os elementos internos */
+    border-radius: 10px; /* Arredonda as bordas do contêiner */
+}
+
+input[type="number"] {
+    border: 2px solid #ccc; /* Define a largura, o estilo e a cor da borda */
+    border-radius: 5px; /* Arredonda as bordas */
+    padding: 8px; /* Adiciona um espaço interno entre o texto e a borda */
+    width: 100%; /* Define a largura do input */
+    box-sizing: border-box; /* Garante que a largura definida inclua a borda e o padding */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+input[type="number"]:focus {
+    border-color: #007bff; /* Altera a cor da borda quando o input está focado */
+    outline: none; /* Remove a borda padrão do navegador ao focar no input */
+}
+
+label {
+    color: white; /* Define a cor do texto das labels */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte */
+    font-size: 20px; /* Define o tamanho da fonte */
+    font-weight: bold;
+}
+/* Estilizando a borda quando o input está focado */
+input[type="number"]:focus {
+    border-color: #007bff; /* Altera a cor da borda quando o input está focado */
+    outline: none; /* Remove a borda padrão do navegador ao focar no input */
+}
+
+/* Estilizando o texto das labels */
+
+h2{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+/* Estilizando o botão */
+button {
+    padding: 10px 20px; /* Adiciona espaçamento interno ao botão */
+    background-color: #007bff; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar por cima do botão */
+    font-family: Arial, sans-serif; /* Define a fonte */
+    font-size: 14px; /* Define o tamanho da fonte */
+}
+
+/* Estilizando o botão quando hover */
+button:hover {
+    background-color: #0056b3; /* Altera a cor de fundo quando hover */
+}
+
+#result{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
