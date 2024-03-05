@@ -12,7 +12,7 @@ body{
     margin: 0 auto; /* Alinha o contêiner ao centro horizontalmente */
     border: 1px solid #ccc; /* Adiciona uma borda ao redor do contêiner */
     padding: 20px; /* Adiciona espaço interno entre a borda e os elementos internos */
-    border-radius: 10px; /* Arredonda as bordas do contêiner */
+    border-radius: 20px; /* Arredonda as bordas do contêiner */
 }
 
 input[type="number"] {
