@@ -36,7 +36,7 @@ ValidaCPF.prototype.isSequencia = function(){
     return sequencia === this.cpfLimpo;
 };
 
-const cpf = new ValidaCPF('07077166910');
+const cpf = new ValidaCPF('07632318941');
 if (cpf.valida()) {
     console.log('CPF válido');
 } else {
