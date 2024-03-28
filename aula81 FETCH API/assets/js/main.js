@@ -1,4 +1,4 @@
-const request = obj => {
+/* const request = obj => {
     return new Promise((resolve, reject) => {
         const xhr = new XMLHttpRequest(); //cria requisição com o construtor 
         xhr.open(obj.method, obj.url, true);
@@ -12,9 +12,7 @@ const request = obj => {
             }
         });
     });
-
-};
-
+}; */
 document.addEventListener('click', e => {
     const el = e.target;
     const tag = el.tagName.toLowerCase();
@@ -24,26 +22,22 @@ document.addEventListener('click', e => {
         carregaPagina(el);
     }
 });
-
 async function carregaPagina(el) {
-    const href = el.getAttribute('href');
-
-    const objConfig = {
-        method: 'GET',
-        url: href
-    };
-
     try {
-        const response = await request(objConfig);
-        carregaResultado(response);
-        window.open(href, '_blank');
-    }catch(e){
-        console.log(e);
-    }
-   
-}
+        const href = el.getAttribute('href');
+        const response = await fetch(href);
 
+        if (response.status !== 200) throw new Error('ERRO 404!');
+
+        const html = await response.text();
+        carregaResultado(html);
+    } catch (e) {
+        console.error(e);
+    }
+}
 function carregaResultado(response) {
     const resultado = document.querySelector('.resultado');
     resultado.innerHTML = response;
 }
+
+
