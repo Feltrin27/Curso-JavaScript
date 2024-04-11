@@ -1,0 +1,43 @@
+comandos terminal node:
+
+npm init -y : inicia com versão curta.
+
+npm install express : instalando express na última versão.
+
+npm install express -E : instala uma versão específica sem atualizações automáticas.
+
+npm update : Atualiza pacotes necessários.
+
+npm install express --save-dev : mover para área de devDependencies.
+
+npm install express --save-prod : move novamente para área de produção.
+
+npm install express@2.1.0 : instalando versão específica.
+
+npm install express@4.x : instalaria a versão 4 na última atualização.
+
+npm uninstall express : desinstala o express.
+
+npm ls : Listar pacotes totais.
+
+npm ls --depth=0 : mostra pacotes instalados somente na primeira pasta, mudando o último número vai abrindo as pastas subsequentes.
+
+npm outdated : verificar pacotes desatualizados.
+
+versão
+
+  2   .  1   .  0
+Major  Minor   Patch
+
+Se tivesse uma atualização só para correção de um bug por exemplo a versão seria assim.
+2.1.1
+Agora se tivesse uma alteração como inclusão de funcionalidade sem perder o funcionamento do todo seria a seguinte.
+2.2.0
+Já se fosse uma alteração que poderia afetar o funcionamento da aplicação ficaria dessa forma.
+3.2.0
+
+
+
+
+
+
