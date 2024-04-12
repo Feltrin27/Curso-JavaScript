@@ -1,6 +1,6 @@
 const nome = 'Erivelton';
 const sobrenome = 'Feltrin';
-const idade = 32;
+const idade = 33;
 const peso = 80;
 const altura = 1.80;
 let imc; // peso / (altura * altura)
@@ -11,5 +11,5 @@ imc = peso / (altura * altura);
 anoNascimento = anoAtual - idade;
 
 console.log(`${nome} ${sobrenome} tem ${idade} anos, pesa ${peso} kg, 
-tem ${altura} metros de altura e seu IMC é de ${imc} e ${nome} ${sobrenome} nasceu em ${anoNascimento} `)
+tem ${altura} metros de altura e seu IMC é de ${imc.toFixed(2)} e ${nome} ${sobrenome} nasceu em ${anoNascimento} `)
 
