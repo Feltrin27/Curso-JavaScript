@@ -6,9 +6,9 @@ function soma (x,y){
 }
 try {
     console.log(soma(1,2));
-    console.log(soma('1', 2));
+    console.log(soma('1', 2));// aqui cai no erro
 } catch (error) {
     //console.log(error);
-    console.log('Alguma coisa amigável usuário.')
+    console.log('tivemos um erro desculpe') // apresenta erro da segunda solicitação
 }
 
