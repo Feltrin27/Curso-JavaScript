@@ -5,4 +5,4 @@ function recursiva(max){
     recursiva(max);
 }
 
-recursiva(1);
+recursiva();
