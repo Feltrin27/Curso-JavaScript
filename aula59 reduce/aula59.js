@@ -9,7 +9,7 @@ const total = numeros.reduce(function(acumulador, valor){
 console.log(total);
 
 // Retorne um array com os pares(Filter) poderia ser feito com filter
-const pares = numeros.reduce(function(acumulador, valor, indice, array){
+const pares = numeros.reduce(function(acumulador, valor){
     if(valor % 2 === 0) acumulador.push(valor);
     return acumulador;
 }, []); 
