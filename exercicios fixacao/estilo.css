@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background-color: wheat;
+    margin: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 20px;
+}
+
+label{
+    margin: 10px;
+}
+.resultado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: darkred;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+}
