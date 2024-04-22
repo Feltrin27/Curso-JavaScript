@@ -19,7 +19,7 @@ app.get('/testes/:idUsuarios?/:parametro?', (req, res) => { //Interrogação no 
     console.log(req.params);
     // /profiles/?chave1=valor1&chave2=valor2
     console.log(req.query);
-    res.send(req.query.facebookprofile);
+    res.send(req.query.facebookprofile); 
 });
 
 app.post('/', (req, res) => {
