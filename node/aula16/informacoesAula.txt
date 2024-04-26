@@ -1,0 +1,3 @@
+Instalado dotenv para usar arquivo .env para colocar o caminho da base de dados.
+Instalado mongoose para utilizar a o mongoDB para base de dados.
+Criado primeiro Model.

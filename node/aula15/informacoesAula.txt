@@ -1,0 +1,5 @@
+Aula de sessions e flash
+comandos para instalar
+npm i express-session connect-mongo connect-flash
+
+Programado um tempo para a sessão ficar ativa no server.js
