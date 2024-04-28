@@ -1,3 +1,11 @@
-Instalado dotenv para usar arquivo .env para colocar o caminho da base de dados.
-Instalado mongoose para utilizar a o mongoDB para base de dados.
-Criado primeiro Model.
+<% Controle de fluxo (if, for..) %>
+<%= Imprime escapando caracteres %>
+<%- Imprime sem escapar caracteres %>
+<%# Comentário %>
+<%- include('CAMINHO/ARQUIVO'); %>
+
+<% if (alguma coisa) { %>
+  <%= exibe alguma coisa %>
+<%} else { %>
+  <%= exibe outra coisa %>
+<%  }  %>  
