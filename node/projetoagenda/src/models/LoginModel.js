@@ -17,6 +17,23 @@ class Login {
         this.user = null;
     }
 
+    async login(){
+        this.valida();
+        if (this.errors.length > 0) return;
+        this.user = await LoginModel.findOne({ email: this.body.email });
+
+        if(!this.user){
+            this.errors.push('Usuário não existe.');
+            return;
+        }
+
+        if(!bcryptjs.compareSync(this.body.password, this.user.password)){
+            this.errors.push('Senha inválida');
+            this.user = null;
+            return;
+        }
+    }
+
     async register() {
         //Método de ver se os campos estão preenchidos corretamente
         this.valida();
@@ -30,16 +47,12 @@ class Login {
         const salt = bcryptjs.genSaltSync();
         //Faz um Hash da senha preenchida
         this.body.password = bcryptjs.hashSync(this.body.password, salt);
-        try {
-            this.user = await LoginModel.create(this.body);
-        } catch (e) {
-            console.log(e);
-        };
+        this.user = await LoginModel.create(this.body);
     }
     //Método para verificar se usuário já está cadastrado
-    async userExists(){
-      const user = await LoginModel.findOne({email: this.body.email});
-      if(user) this.errors.push('Usuário já existe.');
+    async userExists() {
+        this.user = await LoginModel.findOne({ email: this.body.email });
+        if(this.user) this.errors.push('Usuário já existe.');
     }
     //Método para verificar se campos atendem aos requisitos
     valida() {
