@@ -23,7 +23,7 @@ const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/midd
 app.use(express.urlencoded({ extended: true })); // tratar body em post e put
 app.use(express.json());
 app.use(express.static(path.resolve(__dirname, 'public')));
-app.use(helmet());
+//app.use(helmet());
 
 const sessionOptions = session({
     secret: 'feijao',
