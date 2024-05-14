@@ -16,7 +16,7 @@ const MongoStore = require('connect-mongo'); // salva sessão no mongo
 const flash = require('connect-flash'); // mensagens autodestrutivas precisa de sessão
 const routes = require('./routes'); // rotas aplicação
 const path = require('path'); // trabalhar com caminhos
-const helmet = require('helmet'); //Segurança 
+//const helmet = require('helmet'); //Segurança 
 const csrf = require('csurf'); // sites externos não podem postar nada na nossa aplicação
 const { middlewareGlobal, checkCsrfError, csrfMiddleware } = require('./src/middlewares/middleware');// funções que são executadas na rota
 
