@@ -17,9 +17,4 @@ module.exports = {
   rules:{
     "no-console": "off"
   },
-  "bracket-pair-colorizer-2.colors": [
-    "red",
-    "green",
-    "LightSkyBlue"
-  ]
 };
