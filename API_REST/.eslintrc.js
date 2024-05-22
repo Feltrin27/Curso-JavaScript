@@ -1,12 +1,12 @@
 module.exports = {
   env: {
-    es6:true,
-    node:true,
+    es6: true,
+    node: true,
   },
-  extends:[
+  extends: [
     'airbnb-base',
   ],
-  globals:{
+  globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
   },
@@ -14,8 +14,9 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  rules:{
+  rules: {
     "no-console": "off",
-    "class-methods-use-this": "off"
+    "class-methods-use-this": "off",
+    "import/first": "off"
   },
 };
