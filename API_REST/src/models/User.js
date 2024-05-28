@@ -19,10 +19,21 @@ export default class User extends Model {
         defaultValue: '',
         unique: {
           msg: 'Email já existe',
+          fields: ['email'],
         },
         validate: {
           isEmail: {
             msg: 'Email inválido',
+          },
+          isUnique(value, next) {
+            User.findOne({ where: { email: value } })
+              .then((user) => {
+                if (user) {
+                  return next('E-mail já existe, tente outro!');
+                }
+                return next();
+              })
+              .catch((err) => next(err));
           },
         },
       },
@@ -44,7 +55,9 @@ export default class User extends Model {
       sequelize,
     });
     this.addHook('beforeSave', async (user) => {
-      user.password_hash = await bcryptjs.hash(user.password, 8);
+      if (user.password) {
+        user.password_hash = await bcryptjs.hash(user.password, 8);
+      }
     });
     return this;
   }
