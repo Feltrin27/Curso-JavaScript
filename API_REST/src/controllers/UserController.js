@@ -51,6 +51,7 @@ class UserController {
       return res.status(400).json(e.errors.map((err) => err.message));
     }
   }
+
   // Delete
   async delete(req, res) {
     try {
