@@ -1,18 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tags mais usadas</title>
+  <style>
+    .imagem {
+      width: 100px;
+      height: 100px;
+    }
+
+    .green {
+      color: green;
+      font-size: 30px;
+    }
+  </style>
 </head>
+
 <body>
   <h1 style="background: red; color: white;">Cabeçalho</h1>
-  <p><b>Negrito</b> <strong>Palavra forte</strong> <em>Amooooo hambúrguer</em> <i>Itálico</i>, consectetur adipisicing elit. 
-    Quasi, aliquid! Sint, similique, quia iusto hic quo reprehenderit 
-    amet at sunt numquam ducimus adipisci consequuntur repellendus nihil 
+  <p><b>Negrito</b> <strong>Palavra forte</strong> <em>Amooooo hambúrguer</em> <i>Itálico</i>, consectetur adipisicing
+    elit.
+    Quasi, aliquid! Sint, similique, quia iusto hic quo reprehenderit
+    amet at sunt numquam ducimus adipisci consequuntur repellendus nihil
     ullam eligendi distinctio sed!
-    <a href="https://www.google.com.br/?hl=pt-BR" target="_blank">Google</a>
+    <a href="https://developer.mozilla.org/pt-BR/" target="_blank">Google<br><br>
+      <img class="imagem" src="https://cdn.worldvectorlogo.com/logos/mdn.svg" alt="Logo da MDN">
+    </a>
   </p>
-
+  <blockquote>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+    Pariatur maxime, error ea, obcaecati qui cupiditate autem quas eum beatae
+    velit distinctio <code style="color: blue;">console.log</code>, iusto laborum, dolorum doloremque libero impedit
+    iure illum officia!
+  </blockquote>
+  <pre>
+    <code>
+      let iceCream = "chocolate";
+      if (iceCream === "chocolate") {
+      alert("Sim, eu amo sorvete de chocolate!");
+      } else {
+      alert("Aaaah, mas chocolate é o meu favorito…");
+      }
+    </code>
+  </pre>
+  <p><span class="green">Lorem</span> ipsum dolor sit, amet consectetur adipisicing elit. At ratione
+    quidem molestias doloribus minus, laboriosam rem. Quis molestias ullam laboriosam minus
+    in soluta doloremque vel earum ipsam magnam, rem quasi!
+  </p>
+  <div class="green">Eu sou um bloco</div>
 </body>
+
 </html>
