@@ -28,6 +28,6 @@ div{
   margin-left: 20px;
 }
 
-.pai > .filha >.filha{
+.pai > .filha > .filha{
   color: red;
 }

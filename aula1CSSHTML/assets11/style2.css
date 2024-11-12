@@ -1,0 +1,34 @@
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+/*Selecionando o P que vem depois do h1*/
+.pai h1+p{
+  color: red;
+}
+
+/*Selecionando o h1 que vem depois do P*/
+.pai p+h1{
+  color: yellow;
+}
+
+/*Selecionando todos os P depois do h1*/
+.pai h1~p{
+  font-style: italic;
+}
+
+/*Selecionando todas as classes 2 que vem depois de 1*/
+.father .um~.dois {
+  color: chartreuse;
+}
+
+[meu-atributo="valor"]{
+  color:red;
+}
+
+[checked]{
+  width: 100px;
+  height: 100px;
+}

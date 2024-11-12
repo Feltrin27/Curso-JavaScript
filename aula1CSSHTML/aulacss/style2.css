@@ -11,7 +11,6 @@
   'footer footer footer'
   ;
   gap:10px;
-  grid-auto-rows: 20vh 60vh 20vh;
 }
 header {
   grid-area: header;
