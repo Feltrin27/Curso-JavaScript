@@ -1,0 +1,12 @@
+/*
+1° ID
+2° CLASSES
+3° ATRIBUTOS E PSEUDO-CLASSES
+4° ELEMENTOS E PSEUDO ELEMENTOS
+*/
+#p {
+  background: red;
+}
+.p {
+  background: yellow !important;
+}

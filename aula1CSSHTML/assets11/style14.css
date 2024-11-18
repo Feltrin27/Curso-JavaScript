@@ -1,0 +1,25 @@
+ul li::after {
+  content: ' - ';
+  background: red;
+  color: white;
+}
+ul li::before {
+  content: ' - ';
+  background: blue;
+  color: white;
+}
+
+.p1::first-letter{
+  font-size: 50px;
+}
+
+.p2::first-line{
+  background: rgb(23, 197, 125);
+}
+.p3::selection{
+  background: rgb(4, 29, 18);
+  color: white;
+}
+input::placeholder{
+  color: red;
+}
