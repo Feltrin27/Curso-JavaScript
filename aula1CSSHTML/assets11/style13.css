@@ -1,0 +1,36 @@
+.header:hover{
+  background-color: aqua;
+}
+
+.header{
+  transition: all 500ms ease-in-out;
+}
+
+a{
+  color: darkorange;
+}
+a:link{
+  color: deeppink;
+}
+a:visited{
+  color: blueviolet;
+}
+a:hover{
+  background: darkblue;
+  color:white;
+  text-decoration: none;
+}
+a:active{
+  background: green;
+  color: white;
+}
+/* input:focus{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+}
+input:disabled{
+  background-color: red;
+} */
+ input:checked + p{
+  background: red;
+ }
