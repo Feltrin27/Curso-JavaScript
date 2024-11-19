@@ -1,0 +1,9 @@
+#texto{
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  font-size: 30px;
+}
+
+p{
+  font-size: initial;
+}
