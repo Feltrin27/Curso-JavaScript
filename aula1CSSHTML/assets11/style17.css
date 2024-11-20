@@ -1,4 +1,7 @@
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .texto{
   display: block;
   box-sizing: border-box;
@@ -13,19 +16,4 @@
   margin: auto;
   padding: 50px;
   border: 5px solid black;
-}
-.texto1{
-  display: inline;
-  background: aqua;
-  width: 50%;
-}
-.texto2{
-  display: inline;
-  background: aqua;
-  width: 50%;
-}
-.texto3{
-  display: inline;
-  background: aqua;
-  width: 50%;
 }
