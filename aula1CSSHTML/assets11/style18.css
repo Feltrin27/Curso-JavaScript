@@ -1,10 +1,29 @@
 html {
-  font-size: 40px;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
 }
 
 .pai{
-  font-size: 50px;
+  width: 50rem;
+  height: 100vh;
+  background: yellow;
 }
 p{
-  font-size: 1rem;
+  font-size: 2vmax;
+}
+
+.color-one{
+  background: turquoise;
+}
+.color-two{
+  background: violet;
+}
+.pai > div {
+  width: 50%;
+  height: 50rem;
+  background: blue;
 }
