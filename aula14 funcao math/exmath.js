@@ -8,5 +8,7 @@ divTexto.innerHTML = `<p>A raiz quadrada é : ${Math.sqrt(numero)}</p>
 <p>É NaN: ${Number.isNaN(numero)}</p>
 <p>Arredondando para baixo: ${Math.floor(numero)} </p>
 <p>Arredondando para cima: ${Math.ceil(numero)}</p>
-<p>Com duas casas decimais: ${Number(numero.toFixed(2))}</p>`; 
+<p>Com duas casas decimais: ${Number(numero.toFixed(2))}</p>
+<h1>Este ${numero} foi o selecionado pelo input.</h1>
+`; 
 
